@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "sans-serif", sans-serif;
+  background-image: url(back.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 650px;
+  background-image: url(w.jpg);
+  min-height: 350px;
+  padding: 50px 50px;
+  border-radius: 100px;
+  display: flexbox;
+}
+.leftSide,
+.rightSide {
+  color: rgb(68, 13, 13);
+  font-style: italic;
+  width: 50%;
+}
+.leftSide img {
+  height: 300px;
+  width: 300px;
+}
+.rightSide h1 {
+  color: #201414;
+  font-size: 32px;
+}
+.rightSide h2 {
+  color: #444;
+  margin: 20px auto 10px;
+  font-size: 25px;
+}
+.rightSide ul {
+  color: #444;
+  font-size: 18px;
+  margin-top: 600;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.rightSide ul li {
+  margin-top: 5px;
+}
+.rightSide a {
+  background-color: rgba(235, 198, 198, 0.829);
+  border-radius: 100px;
+  color: darkblue;
+  font-weight: 800;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 25px;
+  text-decoration: none;
+  outline: #201414;
+  margin: 0 150px;
+}
+.box {
+  background-color: rgb(71, 55, 33);
+  background-image: url(q.jpg);
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  min-height: 350px;
+  width: 540px;
+  padding: 50px;
+}
+.title {
+  border-bottom: 1px solid #464646;
+  color: #464646;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.optionBox span {
+  background-color: grey;
+  border-radius: 10px;
+  color: rgb(32, 28, 28);
+  border: 1px solid, #444;
+  padding: 10px 15px;
+}
+.header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.scoreBox {
+  border-radius: 100px;
+  padding: 10px 15px;
+  border: 1px solid #444;
+  color: #444;
+}
+.questionBox {
+  background-color: rgb(70, 123, 184);
+  color: rgb(32, 28, 28);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.optionBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px 0;
+  grid-gap: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer button {
+  background-color: darkgreen;
+  border-radius: 20px;
+  padding: 7px 20px;
+  color: whitesmoke;
+  border: 10;
+  outline: none;
+  font-size: 15px;
+}
+.resultBox {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 15px;
+  font-size: 20px;
+}
+.resultBox *:nth-child(odd) {
+  text-align: right;
+}
+.resultBox span {
+  font-weight: 600;
+}
+.buttonBox {
+  border-top: 1px solid #444;
+
+  text-align: center;
+}
+.buttonBox a {
+  background-color: #152329;
+  border-radius: 50px;
+  border: 10;
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  padding: 7px 15px;
+  margin-top: 30px;
+  display: inline-block;
+}
+.optionBox span.right {
+  background-color: rgb(59, 192, 59);
+  border-color: rgb(46, 48, 45);
+  color: rgb(31, 25, 7);
+}
+.optionBox span.wrong {
+  background-color: crimson;
+  border-color: crimson;
+  color: rgb(37, 56, 56);
+}
+
+span:hover {
+  background-color: rgb(145, 196, 202);
+}
+
+@media screen and (max-width: 768px) {
+  .leftSide {
+    display: none;
+  }
+  .container {
+    width: 425px;
+  }
+  .rightSide {
+    width: 100px;
+  }
+  .optionBox {
+    grid-template-columns: 1fr;
+  }
+}
